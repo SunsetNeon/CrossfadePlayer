@@ -16,6 +16,7 @@
         <SeekBar
             android:id="@+id/sb_seekbar"
             android:layout_width="300dp"
+            android:theme="@style/SeekBarColor"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp" />
         
@@ -33,7 +34,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:clickable="true"
-                app:srcCompat="@drawable/ic_play_arrow">
+                app:srcCompat="@drawable/ic_play_arrow"
+                android:focusable="true">
             </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
@@ -49,14 +51,14 @@
                 android:layout_margin="20dp"
                 app:maxImageSize="35dp"
                 android:clickable="true"
-                >
+                android:focusable="true">
             </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textSize="27dp"
+                    android:textSize="27sp"
                     android:text="1"
                     android:elevation="22dp"
                     android:textColor="@android:color/white"
@@ -66,7 +68,7 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|right">
+                android:layout_gravity="bottom|end">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fb_2"
@@ -81,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textSize="27dp"
+                    android:textSize="27sp"
                     android:text="2"
                     android:elevation="16dp"
                     android:textColor="@android:color/white"
